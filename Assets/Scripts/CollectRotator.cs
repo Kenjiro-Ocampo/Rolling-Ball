@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class CollectRotator : MonoBehaviour
 {
-    // Update is called once per frame
+    [SerializeField] float RotateX = 15;
+    [SerializeField] float RotateY = 30;
+    [SerializeField] float RotateZ = 45;
+
     void Update()
     {
-        transform.Rotate(new Vector3 (15, 30, 45) * Time.deltaTime);
+        transform.Rotate(new Vector3 (RotateX, RotateY, RotateZ) * Time.deltaTime);
     }
 }

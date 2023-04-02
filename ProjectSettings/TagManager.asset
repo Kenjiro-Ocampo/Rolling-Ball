@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Collectable
   - Door
+  - Ground
+  - Breakable
   layers:
   - Default
   - TransparentFX
